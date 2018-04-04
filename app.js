@@ -6,7 +6,7 @@ let countryCode;
 $('input[type=button]').on('click', function() {
     countryCode = $(this).val();
 
-    $.get(`http://data.fixer.io/api/${endpoint}?access_key=${access_key}`, function(json) {
+    $.get(`//data.fixer.io/api/${endpoint}?access_key=${access_key}`, function(json) {
 
         json.rates[countryCode]
 
