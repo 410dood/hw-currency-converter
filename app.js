@@ -6,7 +6,7 @@ let countryCode;
 $('input[type=button]').on('click', function() {
     countryCode = $(this).val();
 
-    $.get(`//data.fixer.io/api/${endpoint}?access_key=${access_key}`, function(json) {
+    $.get(`http://data.fixer.io/api/${endpoint}?access_key=${access_key}`, function(json) {
 
         json.rates[countryCode]
 
@@ -17,6 +17,7 @@ $('input[type=button]').on('click', function() {
         $('#output_amount').append("<p> This equals " + finalAnswer + ' ' + countryCode + "</p>")
     })
 });
+
 
 
 //         let usdRate = (json.rates.USD)
