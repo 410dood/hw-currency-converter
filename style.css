@@ -1,0 +1,33 @@
+form {
+    text-align: center;
+}
+body, html {
+    height: 100%;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("giphy.gif");
+    /* Full height */
+    height: 90%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    position: relative;
+}
+#header .header{
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#output_amount {
+    font-size: 60px;
+    color: green;
+}
